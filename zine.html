@@ -3,42 +3,161 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Japonia nr 1.</title>
+    <title>ZIN · Japonia · nr 1.</title>
   </head>
+
   <body>
-    <!-- Widoczna zawartość strony -->
-    <header>
+    <!-- Okładka -->
+    <header id="okladka">
       <h1>Japonia nr 1.</h1>
+      <p>Podróż przez kulturę, tradycję i nowoczesność</p>
     </header>
+    <!-- Spis treści -->
     <nav>
       <h2>Spis treści</h2>
       <ul>
-          <li><a href="#1">Artykuł: Kultura i historia</a></li>
-          <li><a href="#2">Artykuł: Popkultura i nowoczesność</a></li>
-          <li><a href="#3">Lista TO DO w Japonii</a></li>
-	  <li><a href="#4">Grafik wycieczki</a></li>
-	  <li><a href="#5">Formularz</a></li>
+          <li><a href="#historia">Artykuł: Kultura i historia</a></li>
+          <li><a href="#nowoczesnosc">Artykuł: Popkultura i nowoczesność</a></li>
+          <li><a href="#todo">Lista TO DO w Japonii</a></li>
+	  <li><a href="#wycieczka">Grafik wycieczki</a></li>
+	  <li><a href="#formularz">Formularz podróżnika</a></li>
 
       </ul>
     </nav>    
     <main>
-      <section id="1">
-    	<h2>Kultura i historia</h2>
-    	<p>Tutaj znajduje się treść pierwszej sekcji...</p>
-      </section>
+        <!-- ARTYKUŁ 1 -->
+        <article id="historia">
+            <h2>Kultura i historia</h2>
 
-      <section id="2">
-    	<h2>Popkultura i nowoczesność</h2>
-    	<p>Tutaj znajduje się treść drugiej sekcji...</p>
-      </section>
+            <p>
+                Japonia to kraj, w którym wielowiekowa tradycja
+                spotyka się z codziennym życiem współczesnego
+                społeczeństwa. Jej kultura rozwijała się przez
+                stulecia pod wpływem lokalnych wierzeń, buddyzmu
+                oraz kontaktów z innymi krajami Azji.
+            </p>
 
-      <section id="3">
-    	<h2>Lista TO DO w Japonii</h2>
-    	<p>Tutaj znajduje się treść trzeciej sekcji...</p>
-      </section>      
+            <p>
+                Jednym z najbardziej rozpoznawalnych symboli
+                Japonii jest sakura, czyli kwitnąca wiśnia.
+                Wiosną ludzie spotykają się w parkach, aby
+                podziwiać kwiaty. Zwyczaj ten nazywa się hanami.
+            </p>
+
+            <aside>
+                <h3>Czy wiesz, że...?</h3>
+                <p>
+                    Góra Fuji jest najwyższym szczytem Japonii
+                    i ma 3776 metrów wysokości.
+                </p>
+            </aside>
+        </article>
+
+        <!-- ARTYKUŁ 2 -->
+        <article id="nowoczesnosc">
+            <h2>Popkultura i nowoczesność</h2>
+
+            <p>
+                Japonia jest znana na całym świecie z anime,
+                mangi, gier komputerowych i niezwykłej mody
+                ulicznej. W Tokio można znaleźć zarówno
+                nowoczesne centra handlowe, jak i spokojne
+                świątynie ukryte między budynkami.
+            </p>
+
+            <p>
+                Dzielnica Akihabara przyciąga miłośników
+                elektroniki, gier i japońskiej popkultury.
+                Z kolei Harajuku słynie z oryginalnej mody
+                i kolorowego stylu ulicznego.
+            </p>
+        </article>
+
+      <!-- LISTA -->
+      <article id="todo">
+          <h2>Lista TO DO w Japonii</h2>
+
+          <p>Co warto zrobić podczas pierwszej podróży?</p>
+
+          <ul>
+              <li>Spróbować prawdziwego ramenu.</li>
+              <li>Odwiedzić tradycyjną świątynię w Kioto.</li>
+              <li>Przejechać się japońskim pociągiem Shinkansen.</li>
+              <li>Zobaczyć kwitnące wiśnie.</li>
+              <li>Odwiedzić Tokio nocą.</li>
+          </ul>
+      </article>
+
+      <!-- TABELA -->
+      <article id="wycieczka">
+          <h2>Plan wycieczki</h2>
+
+          <table>
+              <caption>Trzy dni w Japonii</caption>
+
+              <thead>
+                  <tr>
+                      <th>Dzień</th>
+                      <th>Miejsce</th>
+                      <th>Plan</th>
+                  </tr>
+              </thead>
+
+               <tbody>
+                  <tr>
+                      <td>1</td>
+                      <td>Tokio</td>
+                      <td>Shibuya i Akihabara</td>
+                  </tr>
+
+                  <tr>
+                      <td>2</td>
+                      <td>Kioto</td>
+                      <td>Świątynie i tradycyjne uliczki</td>
+                  </tr>
+
+                  <tr>
+                      <td>3</td>
+                      <td>Osaka</td>
+                      <td>Zwiedzanie i lokalne jedzenie</td>
+                  </tr>
+               </tbody>
+            </table>
+        </article>
+    
+        <!-- FORMULARZ -->
+        <article id="formularz">
+            <h2>Formularz podróżnika</h2>
+
+            <p>Co najbardziej chcesz zjeść w Japonii?</p>
+
+            <form>
+                <label for="imie">Twoje imię:</label>
+                <input type="text" id="imie" name="imie">
+
+                <p>Wybierz jedzenie:</p>
+
+                <label for="sushi">Sushi</label>
+                <input type="radio" id="sushi" name="jedzenie"
+                       value="Sushi">
+
+                <label for="mochi">Mochi</label>
+                <input type="radio" id="mochi" name="jedzenie"
+                       value="Mochi">
+
+                <label for="ramen">Ramen</label>
+                <input type="radio" id="ramen" name="jedzenie"
+                       value="Ramen">
+
+                <button type="submit">Wyślij</button>
+            </form>
+        </article>  
     </main>
+
     <footer>
-      <p>Stopka strony</p>
+      <p>ZIN · Japonia · nr 1.</p>
+        <p>Stworzono z miłości do podróży i japońskiej kultury.</p>
     </footer>
+
   </body>
 </html>
