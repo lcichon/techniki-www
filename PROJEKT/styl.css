@@ -1,0 +1,65 @@
+*, *::before, *::after { box-sizing: border-box; } /* pading i ramka nie zmieniają wielkości kafelka */
+
+:root {
+  --tlo:    hsl(340 30% 96%);
+  --karta:  hsl(340 40% 100%);
+  --ramka:  hsl(340 20% 82%);
+  --tekst:  hsl(340 45% 18%);
+  --tekst-slaby: hsl(340 15% 45%);
+  --akcent: hsl(340 60% 35%);
+} /* 340 to kolor, a dwie pozostałe wartości to nasycenie i jasność */
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  line-height: 1.5;
+  background: var(--tlo);
+  color: var(--tekst);
+}
+
+a { color: var(--akcent); } /* kolor linków */
+
+#okladka, nav, footer { padding: 1rem; }
+
+main {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+  max-width: 70rem;
+  margin: 0 auto;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+  background: var(--karta);
+  border: 2px solid var(--ramka);
+}
+
+table {
+  width: 100%;
+}
+
+.liczba {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--akcent);
+}
+
+.opis {
+  font-size: 0.9rem;
+  color: var(--tekst-slaby);
+}
+
+th, td {
+  border: 2px solid var(--ramka);
+  padding: 0.5rem;
+}
+
+@media (min-width: 48rem) {
+  main {
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  }
+}
