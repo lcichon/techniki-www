@@ -1,3 +1,4 @@
+Zajęcia 4:
 Z zajęć zrozumiałam, że każdy element (kawałek strony) to pudełko, które posiada:
 - treść 
 - padding (wewnętrzny odstęp)
