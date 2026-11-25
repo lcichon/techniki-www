@@ -21,7 +21,7 @@ function szkic(p) {
 
     let obiekt = dane[biezacy];
     let srodekX = p.width / 2;
-    let srodekY = p.height / 2 + 50;
+    let srodekY = p.height / 2;
     let promien = 45;
 
     // pytanie na górze (tekst zawija się w ramce)
@@ -54,7 +54,7 @@ function szkic(p) {
     p.fill(120);
     p.textSize(13);
     if (pokazPlatki) {
-      p.text('Kliknij środek ponownie, aby przejść do następnego pytania', srodekX, p.height - 25);
+      p.text('Kliknij środek ponownie, <br> aby przejść do następnego pytania', srodekX, p.height - 25);
     } else {
       p.text('Kliknij środek, aby zobaczyć odpowiedź', srodekX, p.height - 25);
     }
