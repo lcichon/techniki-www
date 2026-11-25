@@ -54,7 +54,7 @@ function szkic(p) {
     p.fill(120);
     p.textSize(13);
     if (pokazPlatki) {
-      p.text('Kliknij środek ponownie, <br> aby przejść do następnego pytania', srodekX, p.height - 25);
+      p.text('Kliknij środek ponownie, aby przejść do następnego pytania', 10, p.height - 80, p.width - 20, 65);
     } else {
       p.text('Kliknij środek, aby zobaczyć odpowiedź', srodekX, p.height - 25);
     }
@@ -63,7 +63,7 @@ function szkic(p) {
   // klik myszą 
   p.mousePressed = function () {
     let srodekX = p.width / 2;
-    let srodekY = p.height / 2 + 50;
+    let srodekY = p.height / 2;
     let d = p.dist(p.mouseX, p.mouseY, srodekX, srodekY);
     if (d < 25) { // 25 = promień środka (50/2)
       if (!pokazPlatki) {
